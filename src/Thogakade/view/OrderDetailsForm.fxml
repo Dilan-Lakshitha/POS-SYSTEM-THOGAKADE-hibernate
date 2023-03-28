@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Thogakade.control.OrderDetailsFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="17.0" prefWidth="53.0" text="Order Id" />
+      <Label layoutX="194.0" layoutY="14.0" prefHeight="17.0" prefWidth="96.0" text="Customer Name" />
+      <Label layoutX="386.0" layoutY="14.0" prefHeight="17.0" prefWidth="53.0" text="Date" />
+      <TextField fx:id="txtId" layoutX="26.0" layoutY="43.0" />
+      <TextField fx:id="txtName" layoutX="194.0" layoutY="43.0" />
+      <TextField fx:id="txtDate" layoutX="386.0" layoutY="43.0" prefHeight="25.0" prefWidth="162.0" />
+      <TableView fx:id="tblOrderDetails" layoutX="27.0" layoutY="80.0" prefHeight="240.0" prefWidth="531.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="75.0" text="Item" />
+          <TableColumn fx:id="colDescription" prefWidth="194.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="111.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="149.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="386.0" layoutY="332.0" prefHeight="17.0" prefWidth="71.0" text="Total Cost" />
+      <TextField fx:id="txtCost" layoutX="386.0" layoutY="361.0" prefHeight="25.0" prefWidth="162.0" />
+   </children>
+</AnchorPane>
